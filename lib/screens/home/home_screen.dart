@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:nutriplan/constants/font_family.dart';
+import 'package:nutriplan/config/theme/app_color.dart';
+import 'package:nutriplan/config/theme/font_family.dart';
 
 class NutriHomeScreen extends StatefulWidget {
   const NutriHomeScreen({super.key});
@@ -14,6 +15,7 @@ class _NutriHomeScreenState extends State<NutriHomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: AppColor.subColor[SubColor.tan],
         title: const Text(
           "+300",
         ),
